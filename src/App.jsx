@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import CarDetailsPage from './pages/CarDetailsPage';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import ExplorePage from './pages/ExplorePage';
@@ -11,6 +12,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="cars" element={<ExplorePage />} />
+        <Route path="cars/:carId" element={<CarDetailsPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
