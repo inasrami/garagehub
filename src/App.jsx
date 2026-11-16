@@ -1,3 +1,6 @@
+import OwnerRoute from './components/OwnerRoute';
+import CreateCarPage from './pages/CreateCarPage';
+import EditCarPage from './pages/EditCarPage';
 import { PrivateRoute, GuestRoute } from './components/RouteGuards';
 import AuthPage from './pages/AuthPage';
 import MyGaragePage from './pages/MyGaragePage';
@@ -23,6 +26,10 @@ export default function App() {
         </Route>
         <Route element={<PrivateRoute />}>
           <Route path="my-garage" element={<MyGaragePage />} />
+          <Route path="cars/new" element={<CreateCarPage />} />
+          <Route element={<OwnerRoute />}>
+            <Route path="cars/:carId/edit" element={<EditCarPage />} />
+          </Route>
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Route>

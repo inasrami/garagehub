@@ -155,3 +155,27 @@ nav {
     padding: 18px;
   }
 }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.danger-button {
+  background: #a73434;
+  border-color: #a73434;
+}
+
+.danger-button:hover {
+  background: #812727;
+  border-color: #812727;
+}
+
+.field-help {
+  color: var(--color-muted);
+  font-size: 14px;
+  margin: 4px 0;
+}

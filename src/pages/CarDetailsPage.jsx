@@ -1,3 +1,4 @@
+import CarActions from '../components/CarActions';
 import { useCallback } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getCar } from '../services/cars';
@@ -23,6 +24,7 @@ export default function CarDetailsPage() {
           <CarImage src={car.image_url} alt={`${car.make} ${car.model}`} />
           <p><strong>Year:</strong> {car.year}</p>
           <p><strong>Shared by:</strong> {car.profiles?.display_name || 'Member'}</p>
+          <CarActions car={car} />
           <h2>About this car</h2>
           <p className="preserve-lines">{car.description}</p>
         </article>

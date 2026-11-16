@@ -34,6 +34,7 @@ export default function Layout() {
             <NavLink to="/about">About</NavLink>
             {!loading && (user ? <>
               <NavLink to="/my-garage">My garage</NavLink>
+              <NavLink to="/cars/new">Add car</NavLink>
               <button className="nav-button" onClick={handleLogout} disabled={busy}>{busy ? 'Logging out...' : 'Log out'}</button>
             </> : <>
               <NavLink to="/login">Log in</NavLink>

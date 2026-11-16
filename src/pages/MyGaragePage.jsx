@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useCallback } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { getCars } from '../services/cars';
@@ -14,6 +15,7 @@ export default function MyGaragePage() {
   return (
     <section className="container page">
       <h1>My garage</h1>
+      <Link className="button" to="/cars/new">Add car</Link>
       <p>Cars you have shared with the community.</p>
       <LoadState loading={loading} error={error} onRetry={reload} />
       {!loading && !error && (cars.length
