@@ -23,7 +23,7 @@ async function fetchWithTimeout(input, options = {}) {
 
 try {
   if (!url || !key || url.includes('YOUR_') || key.includes('YOUR_')) {
-    throw new Error('Backend not configured.');
+    throw new Error('Backend not configured. Follow docs/SUPABASE_SETUP.md and restart the development server.');
   }
   if (new URL(url).protocol !== 'https:') throw new Error('The Supabase URL must use HTTPS.');
   if (key.startsWith('sb_secret_')) throw new Error('Use the publishable key, never a secret key.');

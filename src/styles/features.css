@@ -104,3 +104,54 @@ button:focus-visible, input:focus-visible, textarea:focus-visible {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
+
+.form-panel {
+  max-width: 540px;
+  padding: 26px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface);
+}
+
+.field-error {
+  color: #842929;
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+.success-box {
+  padding: 14px;
+  background: #e6f2ef;
+  border: 1px solid #78aaa1;
+}
+
+.nav-button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-ink);
+}
+
+.nav-button:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.header-content {
+  flex-wrap: wrap;
+}
+
+nav {
+  align-items: center;
+  gap: 16px;
+}
+
+@media(max-width:650px) {
+  nav {
+    justify-content: center;
+  }
+  .form-panel {
+    padding: 18px;
+  }
+}

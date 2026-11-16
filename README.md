@@ -1,6 +1,6 @@
 # GarageHub
 
-Car community built with React, JavaScript, Vite and Supabase. Current development milestone: **Phase 2A: Hosted database, searchable catalog and car details**.
+Car community built with React, JavaScript, Vite and Supabase. Current development milestone: **Phase 2B: Authentication, session handling, route guards and My garage**.
 
 ## Setup
 
@@ -14,7 +14,7 @@ npm run build
 npm run preview
 ```
 
-The lockfile is generated/updated locally by npm install and must be committed. See [phase checks](docs/PHASE_CHECKS.md) and [phase instructions](docs/PHASE_2A.md).
+The lockfile is generated/updated locally by npm install and must be committed. See [phase checks](docs/PHASE_CHECKS.md) and [phase instructions](docs/PHASE_2B.md).
 
 ## Status
 
@@ -22,4 +22,4 @@ This intermediate milestone is not the final submission. The completed Functiona
 
 ## Current milestone
 
-Hosted database, searchable catalog and car details. Later features are not claimed as complete in this snapshot. Source was prepared with the user's existing design; live Supabase integration and production deployment still require the user's project configuration.
+Authentication, session handling, route guards and My garage. Later features are not claimed as complete in this snapshot. Source was prepared with the user's existing design; live Supabase integration and production deployment still require the user's project configuration.
