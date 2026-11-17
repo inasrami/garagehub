@@ -53,7 +53,7 @@ export default function Layout() {
       </main>
 
       <footer className="site-footer">
-        <p>GarageHub — React course project</p>
+        <p>GarageHub | React course project</p>
       </footer>
     </div>
   );
