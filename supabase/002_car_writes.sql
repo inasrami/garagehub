@@ -10,5 +10,5 @@ for update to authenticated using ((select auth.uid()) = owner_id)
 with check ((select auth.uid()) = owner_id);
 create policy "Owners can delete their cars" on public.cars
 for delete to authenticated using ((select auth.uid()) = owner_id);
-
+-- Column grants prevent callers from changing owner_id, id or created_at.
 commit;

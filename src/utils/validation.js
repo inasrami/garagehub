@@ -44,3 +44,7 @@ export function carPayload(values) {
     image_url: values.image_url.trim(), description: values.description.trim(),
   };
 }
+
+export function validateComment(body) {
+  return body.trim().length >= 1 && body.trim().length <= 1000 ? '' : 'Write a comment of 1–1000 characters.';
+}

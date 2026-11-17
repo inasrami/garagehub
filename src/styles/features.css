@@ -179,3 +179,42 @@ nav {
   font-size: 14px;
   margin: 4px 0;
 }
+
+.comments {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.comment-list {
+  padding: 0;
+  list-style: none;
+}
+
+.comment {
+  margin-bottom: 16px;
+  padding: 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.comment-meta time {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.text-button {
+  padding: 0;
+  color: #842929;
+  border: 0;
+  background: none;
+  text-decoration: underline;
+}

@@ -1,3 +1,4 @@
+import Comments from '../components/Comments';
 import CarActions from '../components/CarActions';
 import { useCallback } from 'react';
 import { Link, useParams } from 'react-router-dom';
@@ -27,6 +28,7 @@ export default function CarDetailsPage() {
           <CarActions car={car} />
           <h2>About this car</h2>
           <p className="preserve-lines">{car.description}</p>
+        <Comments key={car.id} carId={car.id} />
         </article>
       )}
     </section>
