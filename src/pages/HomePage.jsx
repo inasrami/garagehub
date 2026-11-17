@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <section className="home-info" aria-labelledby="community-heading">
         <h2 id="community-heading">About the community</h2>
-        <p>GarageHub brings car owners together. Here is what we are building:</p>
+        <p>GarageHub brings car owners together. Here is what you can do:</p>
         <div className="card-grid">
           <article className="info-card">
             <h3>Explore cars</h3>
